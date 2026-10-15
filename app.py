@@ -23,10 +23,6 @@ SCALER_FILE = os.getenv("SCALER_FILE", "scaling.pkl")
 scalar=pickle.load(open(SCALER_FILE,'rb'))        # rb is read binary
 regmodel=pickle.load(open(MODEL_FILE,'rb'))     # rb is read binary
 
-## Load the model
-# scalar=pickle.load(open('scaling.pkl','rb'))        # rb is read binary
-# regmodel=pickle.load(open('regmodel.pkl','rb'))     # rb is read binary
-
 # Endpoint root (home)
 @app.route('/')
 def home():
