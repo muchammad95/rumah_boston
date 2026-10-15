@@ -52,7 +52,7 @@ def predict():
 
 @app.route('/health')
 def health():
-    return "OK", 200
+    return "OK - Ini adalah perubahan ke-1", 200
 
 '''
 if __name__=="__main__":
